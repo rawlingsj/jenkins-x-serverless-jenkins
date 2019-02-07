@@ -6,5 +6,4 @@ spec:
   type: image
   params:
     - name: url
-      value: docker.io/rawlingsj/maven:0.0.1
-#      value: jenkins-x-docker-registry.jx.svc.cluster.local:5000/cb-kubecd/pipeline-golang-sample
+      value: docker.io/rawlingsj/maven
