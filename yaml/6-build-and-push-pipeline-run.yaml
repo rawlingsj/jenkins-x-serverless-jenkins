@@ -1,0 +1,32 @@
+apiVersion: pipeline.knative.dev/v1alpha1
+kind: PipelineRun
+metadata:
+  name: tutorial-pipeline-run
+spec:
+  serviceAccount: build-pipeline
+  trigger:
+    type: manual
+  resources:
+  - name: example-source
+    resourceRef:
+      name: example-source
+  - name: dlang-image
+    resourceRef:
+      name: dlang-image
+  - name: go-image
+    resourceRef:
+      name: go-image
+  - name: gradle-image
+    resourceRef:
+      name: gradle-image
+  - name: go-maven-image
+    resourceRef:
+      name: go-maven-image
+  - name: maven-image
+    resourceRef:
+      name: maven-image
+  - name: nodejs-image
+    resourceRef:
+      name: nodejs-image
+  pipelineRef:
+    name: example-pipeline

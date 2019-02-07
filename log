@@ -1,0 +1,173 @@
+[36mINFO[0m[0000] 1 jenkinsxio/builder-base:0.1.230            
+[36mINFO[0m[0000] 2 jenkinsxio/builder-base                    
+[36mINFO[0m[0000] 3 0.1.230                                    
+[36mINFO[0m[0000] 4 jenkinsxio/builder-base                    
+[36mINFO[0m[0000] 5                                            
+[36mINFO[0m[0000] 6 index.docker.io/jenkinsxio/builder-base    
+[36mINFO[0m[0000] Downloading base image jenkinsxio/builder-base:0.1.230 
+[36mINFO[0m[0000] 1 jenkinsxio/builder-base:0.1.230            
+[36mINFO[0m[0000] 2 jenkinsxio/builder-base                    
+[36mINFO[0m[0000] 3 0.1.230                                    
+[36mINFO[0m[0000] 4 jenkinsxio/builder-base                    
+[36mINFO[0m[0000] 5                                            
+[36mINFO[0m[0000] 6 index.docker.io/jenkinsxio/builder-base    
+ERROR: logging before flag.Parse: E0206 12:15:40.217060      12 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E0206 12:15:40.226262      12 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+[36mINFO[0m[0001] Found sha256:98b4892ac868fae41261524046775968901b71bf8278dbf24bd81fc49745d2c1 in local cache 
+[36mINFO[0m[0005] Checking for cached layer jenkins-x-docker-registry:5000/515646a88b23ee073b8f1eb2bdf756e361fe8f575f28b671d1f8c3ffbaab1cb3... 
+[36mINFO[0m[0005] 1 jenkins-x-docker-registry:5000/515646a88b23ee073b8f1eb2bdf756e361fe8f575f28b671d1f8c3ffbaab1cb3 
+[36mINFO[0m[0005] 2 jenkins-x-docker-registry:5000/515646a88b23ee073b8f1eb2bdf756e361fe8f575f28b671d1f8c3ffbaab1cb3 
+[36mINFO[0m[0005] 3                                            
+[36mINFO[0m[0005] 4 515646a88b23ee073b8f1eb2bdf756e361fe8f575f28b671d1f8c3ffbaab1cb3 
+[36mINFO[0m[0005] 5 jenkins-x-docker-registry:5000             
+[36mINFO[0m[0005] 6 jenkins-x-docker-registry:5000/515646a88b23ee073b8f1eb2bdf756e361fe8f575f28b671d1f8c3ffbaab1cb3 
+[36mINFO[0m[0005] Using caching version of cmd: RUN set -o errexit -o nounset 
+[36mINFO[0m[0005] Checking for cached layer jenkins-x-docker-registry:5000/d0099819d9ab29c10de45c4b00f06d0eab9d68ddb02e4174b99c1c4dd65999bc... 
+[36mINFO[0m[0005] 1 jenkins-x-docker-registry:5000/d0099819d9ab29c10de45c4b00f06d0eab9d68ddb02e4174b99c1c4dd65999bc 
+[36mINFO[0m[0005] 2 jenkins-x-docker-registry:5000/d0099819d9ab29c10de45c4b00f06d0eab9d68ddb02e4174b99c1c4dd65999bc 
+[36mINFO[0m[0005] 3                                            
+[36mINFO[0m[0005] 4 d0099819d9ab29c10de45c4b00f06d0eab9d68ddb02e4174b99c1c4dd65999bc 
+[36mINFO[0m[0005] 5 jenkins-x-docker-registry:5000             
+[36mINFO[0m[0005] 6 jenkins-x-docker-registry:5000/d0099819d9ab29c10de45c4b00f06d0eab9d68ddb02e4174b99c1c4dd65999bc 
+[36mINFO[0m[0005] Using caching version of cmd: RUN echo "Downloading Gradle" 
+[36mINFO[0m[0005] Checking for cached layer jenkins-x-docker-registry:5000/16b9b049524fc7c32187ca92f54ca2ba0d6a52e8ed531ac8e351137bf6bb0708... 
+[36mINFO[0m[0005] 1 jenkins-x-docker-registry:5000/16b9b049524fc7c32187ca92f54ca2ba0d6a52e8ed531ac8e351137bf6bb0708 
+[36mINFO[0m[0005] 2 jenkins-x-docker-registry:5000/16b9b049524fc7c32187ca92f54ca2ba0d6a52e8ed531ac8e351137bf6bb0708 
+[36mINFO[0m[0005] 3                                            
+[36mINFO[0m[0005] 4 16b9b049524fc7c32187ca92f54ca2ba0d6a52e8ed531ac8e351137bf6bb0708 
+[36mINFO[0m[0005] 5 jenkins-x-docker-registry:5000             
+[36mINFO[0m[0005] 6 jenkins-x-docker-registry:5000/16b9b049524fc7c32187ca92f54ca2ba0d6a52e8ed531ac8e351137bf6bb0708 
+[36mINFO[0m[0005] Using caching version of cmd: RUN	wget -O gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" 
+[36mINFO[0m[0005] Checking for cached layer jenkins-x-docker-registry:5000/b978c0b1c42320d2bfe4d671bcf38bda791c1c1af1208158962be139c1836e13... 
+[36mINFO[0m[0005] 1 jenkins-x-docker-registry:5000/b978c0b1c42320d2bfe4d671bcf38bda791c1c1af1208158962be139c1836e13 
+[36mINFO[0m[0005] 2 jenkins-x-docker-registry:5000/b978c0b1c42320d2bfe4d671bcf38bda791c1c1af1208158962be139c1836e13 
+[36mINFO[0m[0005] 3                                            
+[36mINFO[0m[0005] 4 b978c0b1c42320d2bfe4d671bcf38bda791c1c1af1208158962be139c1836e13 
+[36mINFO[0m[0005] 5 jenkins-x-docker-registry:5000             
+[36mINFO[0m[0005] 6 jenkins-x-docker-registry:5000/b978c0b1c42320d2bfe4d671bcf38bda791c1c1af1208158962be139c1836e13 
+[36mINFO[0m[0005] Using caching version of cmd: RUN	echo "Checking download hash" 
+[36mINFO[0m[0005] Checking for cached layer jenkins-x-docker-registry:5000/cfb8f908b25686f510416b1a23e2458f3eeabb55bdddae432e5d1ad543dbbf0e... 
+[36mINFO[0m[0005] 1 jenkins-x-docker-registry:5000/cfb8f908b25686f510416b1a23e2458f3eeabb55bdddae432e5d1ad543dbbf0e 
+[36mINFO[0m[0005] 2 jenkins-x-docker-registry:5000/cfb8f908b25686f510416b1a23e2458f3eeabb55bdddae432e5d1ad543dbbf0e 
+[36mINFO[0m[0005] 3                                            
+[36mINFO[0m[0005] 4 cfb8f908b25686f510416b1a23e2458f3eeabb55bdddae432e5d1ad543dbbf0e 
+[36mINFO[0m[0005] 5 jenkins-x-docker-registry:5000             
+[36mINFO[0m[0005] 6 jenkins-x-docker-registry:5000/cfb8f908b25686f510416b1a23e2458f3eeabb55bdddae432e5d1ad543dbbf0e 
+[36mINFO[0m[0005] Using caching version of cmd: RUN	echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum -c - 
+[36mINFO[0m[0005] Checking for cached layer jenkins-x-docker-registry:5000/e3b481646463ca38483b3f6c7b7fd668238f52ad82845f6c6ed46d00c371ea9c... 
+[36mINFO[0m[0005] 1 jenkins-x-docker-registry:5000/e3b481646463ca38483b3f6c7b7fd668238f52ad82845f6c6ed46d00c371ea9c 
+[36mINFO[0m[0005] 2 jenkins-x-docker-registry:5000/e3b481646463ca38483b3f6c7b7fd668238f52ad82845f6c6ed46d00c371ea9c 
+[36mINFO[0m[0005] 3                                            
+[36mINFO[0m[0005] 4 e3b481646463ca38483b3f6c7b7fd668238f52ad82845f6c6ed46d00c371ea9c 
+[36mINFO[0m[0005] 5 jenkins-x-docker-registry:5000             
+[36mINFO[0m[0005] 6 jenkins-x-docker-registry:5000/e3b481646463ca38483b3f6c7b7fd668238f52ad82845f6c6ed46d00c371ea9c 
+[36mINFO[0m[0005] Using caching version of cmd: RUN echo "Installing Gradle" 
+[36mINFO[0m[0005] Checking for cached layer jenkins-x-docker-registry:5000/0b40d52da706dd6fcaf142eab202608391a8403c7ff7110b1ce94503eeb16db4... 
+[36mINFO[0m[0005] 1 jenkins-x-docker-registry:5000/0b40d52da706dd6fcaf142eab202608391a8403c7ff7110b1ce94503eeb16db4 
+[36mINFO[0m[0005] 2 jenkins-x-docker-registry:5000/0b40d52da706dd6fcaf142eab202608391a8403c7ff7110b1ce94503eeb16db4 
+[36mINFO[0m[0005] 3                                            
+[36mINFO[0m[0005] 4 0b40d52da706dd6fcaf142eab202608391a8403c7ff7110b1ce94503eeb16db4 
+[36mINFO[0m[0005] 5 jenkins-x-docker-registry:5000             
+[36mINFO[0m[0005] 6 jenkins-x-docker-registry:5000/0b40d52da706dd6fcaf142eab202608391a8403c7ff7110b1ce94503eeb16db4 
+[36mINFO[0m[0005] Using caching version of cmd: RUN	unzip gradle.zip 
+[36mINFO[0m[0005] Checking for cached layer jenkins-x-docker-registry:5000/8ae1585236f4c0941296c3edc8b0c0e1d2f251c655654d3f03b882125e80fe25... 
+[36mINFO[0m[0005] 1 jenkins-x-docker-registry:5000/8ae1585236f4c0941296c3edc8b0c0e1d2f251c655654d3f03b882125e80fe25 
+[36mINFO[0m[0005] 2 jenkins-x-docker-registry:5000/8ae1585236f4c0941296c3edc8b0c0e1d2f251c655654d3f03b882125e80fe25 
+[36mINFO[0m[0005] 3                                            
+[36mINFO[0m[0005] 4 8ae1585236f4c0941296c3edc8b0c0e1d2f251c655654d3f03b882125e80fe25 
+[36mINFO[0m[0005] 5 jenkins-x-docker-registry:5000             
+[36mINFO[0m[0005] 6 jenkins-x-docker-registry:5000/8ae1585236f4c0941296c3edc8b0c0e1d2f251c655654d3f03b882125e80fe25 
+[36mINFO[0m[0005] Using caching version of cmd: RUN	rm gradle.zip 
+[36mINFO[0m[0005] Checking for cached layer jenkins-x-docker-registry:5000/432bba5091504669279f9342699af9b0034361926f23041f0170ac6304183a65... 
+[36mINFO[0m[0005] 1 jenkins-x-docker-registry:5000/432bba5091504669279f9342699af9b0034361926f23041f0170ac6304183a65 
+[36mINFO[0m[0005] 2 jenkins-x-docker-registry:5000/432bba5091504669279f9342699af9b0034361926f23041f0170ac6304183a65 
+[36mINFO[0m[0005] 3                                            
+[36mINFO[0m[0005] 4 432bba5091504669279f9342699af9b0034361926f23041f0170ac6304183a65 
+[36mINFO[0m[0005] 5 jenkins-x-docker-registry:5000             
+[36mINFO[0m[0005] 6 jenkins-x-docker-registry:5000/432bba5091504669279f9342699af9b0034361926f23041f0170ac6304183a65 
+[36mINFO[0m[0005] Using caching version of cmd: RUN	mkdir -p /opt 
+[36mINFO[0m[0005] Checking for cached layer jenkins-x-docker-registry:5000/331df8244103fd125abebef1cae5fb1e5c5ea9261dd94b13dfe3194eeb83a04e... 
+[36mINFO[0m[0005] 1 jenkins-x-docker-registry:5000/331df8244103fd125abebef1cae5fb1e5c5ea9261dd94b13dfe3194eeb83a04e 
+[36mINFO[0m[0005] 2 jenkins-x-docker-registry:5000/331df8244103fd125abebef1cae5fb1e5c5ea9261dd94b13dfe3194eeb83a04e 
+[36mINFO[0m[0005] 3                                            
+[36mINFO[0m[0005] 4 331df8244103fd125abebef1cae5fb1e5c5ea9261dd94b13dfe3194eeb83a04e 
+[36mINFO[0m[0005] 5 jenkins-x-docker-registry:5000             
+[36mINFO[0m[0005] 6 jenkins-x-docker-registry:5000/331df8244103fd125abebef1cae5fb1e5c5ea9261dd94b13dfe3194eeb83a04e 
+[36mINFO[0m[0005] Using caching version of cmd: RUN	mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/" 
+[36mINFO[0m[0005] Checking for cached layer jenkins-x-docker-registry:5000/5137ac4f94eb058b9e6c1d76e0c278891f291b98e8ce181f9a0e1a10010f8bd8... 
+[36mINFO[0m[0005] 1 jenkins-x-docker-registry:5000/5137ac4f94eb058b9e6c1d76e0c278891f291b98e8ce181f9a0e1a10010f8bd8 
+[36mINFO[0m[0005] 2 jenkins-x-docker-registry:5000/5137ac4f94eb058b9e6c1d76e0c278891f291b98e8ce181f9a0e1a10010f8bd8 
+[36mINFO[0m[0005] 3                                            
+[36mINFO[0m[0005] 4 5137ac4f94eb058b9e6c1d76e0c278891f291b98e8ce181f9a0e1a10010f8bd8 
+[36mINFO[0m[0005] 5 jenkins-x-docker-registry:5000             
+[36mINFO[0m[0005] 6 jenkins-x-docker-registry:5000/5137ac4f94eb058b9e6c1d76e0c278891f291b98e8ce181f9a0e1a10010f8bd8 
+[36mINFO[0m[0005] Using caching version of cmd: RUN	ln -s "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle 
+[36mINFO[0m[0005] Taking snapshot of full filesystem...        
+[36mINFO[0m[0007] Skipping paths under /kaniko, as it is a whitelisted directory 
+[36mINFO[0m[0007] Skipping paths under /var/run, as it is a whitelisted directory 
+[36mINFO[0m[0007] Skipping paths under /tools, as it is a whitelisted directory 
+[36mINFO[0m[0007] Skipping paths under /builder/home, as it is a whitelisted directory 
+[36mINFO[0m[0007] Skipping paths under /dev, as it is a whitelisted directory 
+[36mINFO[0m[0007] Skipping paths under /proc, as it is a whitelisted directory 
+[36mINFO[0m[0007] Skipping paths under /sys, as it is a whitelisted directory 
+[36mINFO[0m[0007] Skipping paths under /workspace, as it is a whitelisted directory 
+[36mINFO[0m[0007] CMD ["gradle"]                               
+[36mINFO[0m[0007] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0007] ENV GRADLE_HOME /opt/gradle                  
+[36mINFO[0m[0007] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0007] ENV GRADLE_VERSION 4.6                       
+[36mINFO[0m[0007] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0007] ARG GRADLE_DOWNLOAD_SHA256=98bd5fd2b30e070517e03c51cbb32beee3e2ee1a84003a5a5d748996d4b1b915 
+[36mINFO[0m[0007] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0007] RUN set -o errexit -o nounset                
+[36mINFO[0m[0007] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0007] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0007] RUN echo "Downloading Gradle"                
+[36mINFO[0m[0007] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0007] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0007] RUN	wget -O gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" 
+[36mINFO[0m[0007] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0008] Taking snapshot of files...                  
+[36mINFO[0m[0010] RUN	echo "Checking download hash"            
+[36mINFO[0m[0010] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0010] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0010] RUN	echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum -c - 
+[36mINFO[0m[0010] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0010] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0010] RUN echo "Installing Gradle"                 
+[36mINFO[0m[0010] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0010] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0010] RUN	unzip gradle.zip                         
+[36mINFO[0m[0010] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0011] Taking snapshot of files...                  
+[36mINFO[0m[0013] RUN	rm gradle.zip                            
+[36mINFO[0m[0013] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0013] Taking snapshot of files...                  
+[36mINFO[0m[0013] RUN	mkdir -p /opt                            
+[36mINFO[0m[0013] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0013] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0013] RUN	mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/" 
+[36mINFO[0m[0013] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0014] Taking snapshot of files...                  
+[36mINFO[0m[0016] RUN	ln -s "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle 
+[36mINFO[0m[0016] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0016] Taking snapshot of files...                  
+[36mINFO[0m[0016] 1 docker.io/rawlingsj/builder-gradle:0.0.1   
+[36mINFO[0m[0016] 2 docker.io/rawlingsj/builder-gradle         
+[36mINFO[0m[0016] 3 0.0.1                                      
+[36mINFO[0m[0016] 4 rawlingsj/builder-gradle                   
+[36mINFO[0m[0016] 5 index.docker.io                            
+[36mINFO[0m[0016] 6 index.docker.io/rawlingsj/builder-gradle   
+[36mINFO[0m[0016] AA [jenkins-x-docker-registry:5000]          
+[36mINFO[0m[0016] BB index.docker.io                           
+[36mINFO[0m[0016] dd %!(NOVERB)%!(EXTRA string=https)          
+[36mINFO[0m[0016] Pushing to destination index.docker.io/rawlingsj/builder-gradle 
+2019/02/06 12:15:57 existing blob: sha256:cf654fdce85baa02a1fa8eb3b551d5468e00bd7dcd7f4c767a7fa554f87bdffe
+2019/02/06 12:15:57 existing blob: sha256:26f00d4b0f0124d09bb2c988b8ff19c2bb1f29f94d142380469779ec99b9bacb
+2019/02/06 12:15:57 pushed blob sha256:cc9f5fa02995be8dcae8681f452acd9331ae1c9dbb2133e2cb01fc3fec405a6a
+2019/02/06 12:15:57 pushed blob sha256:f7336a25d5730104e0763b3f622de5ee8b860b6d95ee55b9311bcb20c32c510a
+2019/02/06 12:15:58 pushed blob sha256:7349d7dc2c517efe3bb7b3f07260425d1054df11d46c3d9026b1a1b04b69fd10
+2019/02/06 12:16:03 pushed blob sha256:166e4ed720fd25c0252cf5535b2ffba278ff93cbd489520c316e8acb45c8bbd0
+2019/02/06 12:16:04 pushed blob sha256:cd12fd49e8bc0f0da2ccfae636cfe0a67a30df023c23cb76b4b165fdc75641ff
+2019/02/06 12:16:04 pushed blob sha256:7a0d78597c7bebaaaedf34421306a078db94b35ab5fadb0c61e6a3b7d2356e8f
+2019/02/06 12:16:05 index.docker.io/rawlingsj/builder-gradle: digest: sha256:a7f15d3c7a1fe276bd70ed5bf61c6b092cd8cebe8fc8a12e4e1fdd2386652fd6 size: 1410

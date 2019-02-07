@@ -1,0 +1,41 @@
+apiVersion: pipeline.knative.dev/v1alpha1
+kind: Pipeline
+metadata:
+  name: example-pipeline
+spec:
+  resources:
+  - name: example-source
+    type: git
+  - name: dlang-image
+    type: image
+  - name: go-image
+    type: image
+  - name: go-maven-image
+    type: image
+  - name: maven-image
+    type: image
+  - name: gradle-image
+    type: image
+  - name: nodejs-image
+    type: image
+  tasks:
+  - name: build
+    resources:
+      inputs:
+      - name: source
+        resource: example-source
+      outputs:
+      - name: dlang-image
+        resource: dlang-image
+      - name: go-image
+        resource: go-image
+      - name: go-maven-image
+        resource: go-maven-image
+      - name: gradle-image
+        resource: gradle-image
+      - name: maven-image
+        resource: maven-image
+      - name: nodejs-image
+        resource: nodejs-image
+    taskRef:
+      name: build-docker-image-from-git-source
