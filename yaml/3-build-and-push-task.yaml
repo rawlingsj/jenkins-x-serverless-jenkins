@@ -73,24 +73,17 @@ spec:
           memory: 128Mi
       workingDir: ${inputs.params.baseWorkspace}
     - name: build-and-push-base
-      image: rawlingsj/executor:dev17
+      image: rawlingsj/executor:dev21
       command:
-        - /kaniko/executor
-      args:
-        - --dockerfile=${inputs.params.baseWorkspace}/Dockerfile.base
-        - --destination=${outputs.resources.base-image.url}:$(cat VERSION)
-        - --context=${inputs.params.baseWorkspace}/jenkins-base
-        - --cache-repo=jenkins-x-docker-registry.jx.svc.cluster.local:5000/
-        - --cache=true
-        - --cache-dir=/workspace
-        - --skip-tls-verify-registry=jenkins-x-docker-registry.jx.svc.cluster.local:5000
+        - /bin/bash
+      args: ['-c','/kaniko/executor --dockerfile=/workspace/source/Dockerfile.base --destination=docker.io/rawlingsj/jenkins-base:$(cat /workspace/source/VERSION) --context=/workspace/source/jenkins-base --cache-repo=jenkins-x-docker-registry.jx.svc.cluster.local:5000/ --cache=true --cache-dir=/workspace --skip-tls-verify-registry=jenkins-x-docker-registry.jx.svc.cluster.local:5000']
       resources:
         limits:
-          cpu: 4
-          memory: 8192Mi
+          cpu: 1
+          memory: 2048Mi
         requests:
-          cpu: 2
-          memory: 4096Mi
+          cpu: 0.5
+          memory: 1024Mi
     - name: warm-cache
       image: gcr.io/kaniko-project/warmer
       args:
@@ -98,27 +91,20 @@ spec:
         - --image=docker.io/rawlingsj/jenkins-base
       resources:
         limits:
-          cpu: 2
-          memory: 4096Mi
-        requests:
           cpu: 1
-          memory: 2018Mi
+          memory: 2048Mi
+        requests:
+          cpu: 0.5
+          memory: 1024Mi
     - name: build-and-push-maven
-      image: rawlingsj/executor:dev17
+      image: rawlingsj/executor:dev21
       command:
-        - /kaniko/executor
-      args:
-        - --dockerfile=${inputs.params.baseWorkspace}/Dockerfile.maven
-        - --destination=${outputs.resources.maven-image.url}:$(cat VERSION)
-        - --context=${inputs.params.baseWorkspace}/jenkins-maven
-        - --cache-repo=jenkins-x-docker-registry.jx.svc.cluster.local:5000/
-        - --cache=true
-        - --cache-dir=/workspace
-        - --skip-tls-verify-registry=jenkins-x-docker-registry.jx.svc.cluster.local:5000
+        - /bin/bash
+      args: ['-c','/kaniko/executor --dockerfile=/workspace/source/Dockerfile.maven --destination=docker.io/rawlingsj/jenkins-maven:$(cat /workspace/source/VERSION) --context=/workspace/source/jenkins-maven --cache-repo=jenkins-x-docker-registry.jx.svc.cluster.local:5000/ --cache=true --cache-dir=/workspace --skip-tls-verify-registry=jenkins-x-docker-registry.jx.svc.cluster.local:5000']
       resources:
         limits:
-          cpu: 4
-          memory: 8192Mi
+          cpu: 1
+          memory: 2048Mi
         requests:
-          cpu: 2
-          memory: 4096Mi
+          cpu: 0.5
+          memory: 1024Mi
